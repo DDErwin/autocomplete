@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State Population Autofill</title>
+        <meta name='description' content='Autofill search using only JS, no jQuery' />
+        <meta name="author" content="Dennis Erwin" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+    
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div id="section_one">
+                <h1>States and their populations</h1><br/>
+                <p>Type in a US state name and submit to see that state's population according to 2010 US Census data</p>
+                <p>Enter enough states and hover over list to see scrolling feature</p>
+                <p>The challenge was just to use HTML, CSS, and JS. No jQuery</p>
+                    <div class="form-group">
+                        <input type="text" autocomplete="off" class="form-control" id="enteredCity" placeholder="Enter a US State" />
+                        <input type="submit" class="btn btn-default" onclick="listStateAndPop();" value="Enter" />
+                        <ul id="dropdown_content"></ul>
+                    </div>
+            </div>
+            
+            <div id="section_two" class="added">
+                <div id="section_two_child">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>    
+        </div>
+        <div id="transparent"></div>
+        <div id="transparent2"></div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
